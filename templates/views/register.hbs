@@ -1,0 +1,76 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/sntc.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/build.css">
+    <title>4 Sinisters Official</title>
+</head>
+
+<body>
+    <nav class="justify-between  mx-4 py-4 border-b-2 border-black ">
+        <a href="/">
+            <div class="flex space-x-2 justify-center">
+                <img src="img/snt.jpg" class="w-14 h-14 rounded-full" alt="">
+                <span class="pt-2 font-bold text-3xl hover:text-[#1abebe] transition delay-150">4 Sinisters</span>
+            </div>
+        </a>
+    </nav>
+    <div class="flex flex-col h-[100vh] justify-between">
+        <div lass="mt-24">
+            <section>
+                <div class="px-6  text-gray-800">
+                    <div
+                        class="flex xl:justify-center lg:justify-between justify-center items-center flex-wrap h-full g-6">
+                        <div class="grow-0 shrink-1 md:shrink-0 basis-auto xl:w-6/12 lg:w-6/12 md:w-9/12 mb-12 md:mb-0">
+                            <img src="img/signup.png" class="w-full" alt="Sample image" />
+                        </div>
+                        <div class="xl:ml-20 xl:w-5/12 lg:w-5/12 md:w-8/12 mb-12 md:mb-0">
+                            <form class="xl:mt-16" action="/register" method="POST">
+                            <p class="text-red-600 text-lg">{{passerr}}</p>
+
+                                <!-- Email input -->
+                                <div class="mb-6">
+                                    <input type="text"
+                                        class="form-control block w-full px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-[#1abebe] focus:outline-none"
+                                        id="exampleFormControlInput2" placeholder="*In Game Name" name="ingamename"/>
+                                </div>
+
+                                <!-- Password input -->
+                                <div class="mb-6">
+                                    <input type="password"
+                                        class="form-control block w-full px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-[#1abebe] focus:outline-none"
+                                        id="exampleFormControlInput2" placeholder="*Password" name="passward" />
+                                </div>
+                                <div class="mb-6">
+                                    <input type="password"
+                                        class="form-control block w-full px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-[#1abebe] focus:outline-none"
+                                        id="exampleFormControlInput2" placeholder="*Confirm Password"name="confirmpassward" />
+                                </div>
+                                <div class="text-center lg:text-left">
+                                    <button type="submit"
+                                        class="inline-block px-7 py-3 bg-[#1abebe] text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-[#0a9393] hover:shadow-lg focus:bg-[#0a9393] focus:shadow-lg focus:outline-none focus:ring-0 active:bg-[#0a9393] active:shadow-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
+                                        Sing Up
+                                    </button>
+                                    <p class="text-sm font-semibold mt-2 pt-1 mb-0">
+                                        Already a member ?
+                                        <a href="/login"
+                                            class="text-red-600 hover:text-red-700 focus:text-red-700 transition duration-200 ease-in-out">Log
+                                            in</a>
+                                    </p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div>
+            {{>footer}}
+        </div>
+    </div>
+</body>
+
+</html>
