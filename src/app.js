@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require('express');
 const path = require("path")
 const app = express();
@@ -93,7 +94,7 @@ app.post("/register", async(req,res)=>{
 });
 
 
-//Post request foe login page
+//Post request for login page
 app.post("/login", async(req,res)=>{
     try {
         const ingamename = req.body.ingamename;

@@ -1,7 +1,10 @@
+require('dotenv').config()
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb://localhost:27017/4_Snisters_Officials").then(()=>{
+mongoose.connect(process.env.DATABASE).then(()=>{
     console.log("Connection is successful");
 }).catch((e)=>{
     console.log(e);
+    // console.log("error");
+
 })
