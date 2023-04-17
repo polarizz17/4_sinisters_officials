@@ -1,0 +1,6 @@
+{
+  "version": 2,
+  "name": "4-Sinisters-Officials",
+  "builds": [{ "src": "src/app.js", "use": "@vercel/node" }],
+  "routes": [{ "src": "/(.*)", "dest": "src/app.js" }]
+}
